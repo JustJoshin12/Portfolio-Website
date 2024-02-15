@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Playfair";
+  src: url("./fonts/PlayfairDisplay-Black.ttf") format("woff");
+}
+@font-face {
+  font-family: "Playfair-medium";
+  src: url("./fonts/PlayfairDisplay-Medium.ttf") format("woff");
+}
+@font-face {
+  font-family: "Playfair-semibold";
+  src: url("./fonts/PlayfairDisplay-SemiBold.ttf") format("woff");
+}
+@font-face {
+  font-family: "Playfair-bold";
+  src: url("./fonts/PlayfairDisplay-Bold.ttf") format("woff");
+}
