@@ -18,3 +18,7 @@
   font-family: "Playfair-bold";
   src: url("./fonts/PlayfairDisplay-Bold.ttf") format("woff");
 }
+
+html {
+  scroll-behavior: smooth;
+}
