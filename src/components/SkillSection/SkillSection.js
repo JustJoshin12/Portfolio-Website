@@ -1,5 +1,5 @@
 import SKillIcon from "../UI/SkillIcon/SkillIcon";
-import Arrow from "../../images/arrow.png";
+import Arrow from "../../images/arrowLeft.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -26,16 +26,11 @@ const SkillSection = () => {
                 }
             `}
       </style>
-      <section id="skills" className="py-32 mt-[-4rem]">
+      <section id="skills" className="py-24 mt-[-4rem]">
         <div className="flex items-center pt-14 pl-24">
           <h2 className="font-[Playfair] text-4xl inline-block align-middle">
-            Skills :
+            Skills : MERN - STACK
           </h2>
-          <img
-            src={Arrow}
-            className="w-[100px] ml-10 arrow-animate"
-            alt="Animated arrow"
-          />
         </div>
         <Swiper
           breakpoints={{
@@ -68,12 +63,20 @@ const SkillSection = () => {
           {skillObject.map((skill,index) => {
             
             return (
-              <SwiperSlide key={index} className="w-[90%] py-28">
+              <SwiperSlide key={index} className="w-[90%] py-20">
                 <SKillIcon skill={skill} />
               </SwiperSlide>
             );
           })}
         </Swiper>
+        <div className="flex items-center justify-center gap-16 py-8"> 
+        <img
+            src={Arrow}
+            className="w-[100px]  arrow-animate"
+            alt="Animated arrow"
+          />
+          <p className="text-5xl font-[Playfair]">Swipe</p>
+        </div>
       </section>
     </>
   );

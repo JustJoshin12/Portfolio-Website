@@ -15,7 +15,7 @@ const MyVideoComponent = ({ videoSrc, width, height }) => {
         url={videoSrc}
         width={width}
         height={height}
-        playing={false}
+        playing
         muted={true}
         loop
         controls={showControls}

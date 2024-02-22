@@ -1,5 +1,7 @@
 import HeroImage from "../UI/HeroImage/HeroImage";
 import TypingEffect from "../UI/TypingEffect/TypingEffect";
+import PortfolioButton from "../UI/PortfolioButton/PortfolioButton";
+import HireMeButton from "../UI/HireMeButton/HireMeButton";
 
 
 const Header = () => {
@@ -20,8 +22,8 @@ const Header = () => {
             from Chicago
           </p>
           <div className="flex justify-around pt-2">
-            <button className="btn btn-neutral bg-slate-600 border-none">Hire Me</button>
-            <button className="btn btn-neutral bg-slate-600 border-none">My Portfolio</button>
+            <HireMeButton/>
+            <PortfolioButton/>
           </div>
         </div>
         <div className="relative ml-10">

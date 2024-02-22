@@ -27,11 +27,11 @@ function HeroImage() {
         }
       }
       .blob-effect {
-        animation: blob 9s infinite;
+        animation: blob 7s infinite;
       }
         `}
       </style>
-      <div className="relative w-[500px] h-[500px] overflow-hidden rounded-full blob-effect">
+      <div className="relative w-[500px] h-[500px] overflow-hidden rounded-full blob-effect border-black border-4">
         <img src={heroImg} alt="Hero" className="object-cover w-full h-full" />
         <div className=""></div>
       </div>

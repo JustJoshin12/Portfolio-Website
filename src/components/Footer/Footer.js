@@ -5,14 +5,15 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
   return (
-    <footer id="contact-me" className="footer footer-center p-20 bg-base-200 text-base-content rounded font-[Playfair]">
-      <nav className="grid grid-flow-col gap-20 text-xl">
-        <a className="link link-hover">About us</a>
-        <a className="link link-hover">Contact</a>
-        <a className="link link-hover">Jobs</a>
-        <a className="link link-hover">Press kit</a>
-      </nav>
-      <nav>
+    <footer
+      id="contact"
+      className="footer footer-center p-20 bg-base-200 text-base-content rounded font-[Playfair]"
+    >
+      <p className="text-xl font-[Playfair]">
+        Please find below my contact information. Please do not hesitate to
+        reach out to me at your convenience.
+      </p>
+      <nav className="py-8">
         <div className="grid grid-flow-col gap-16">
           <a
             href="https://github.com/JustJoshin12"
