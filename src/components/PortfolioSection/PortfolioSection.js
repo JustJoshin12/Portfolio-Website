@@ -7,7 +7,7 @@ const PortfolioSection = ({ portfolioVideos }) => {
       className="bg-black text-white font-[Playfair] flex flex-col gap-10 pt-24 mt-[-6rem]"
     >
       <h2 className="text-8xl py-28 flex justify-center">Portfolio</h2>
-      <div className="flex p-20">
+      <div id="artist" className="flex p-20">
         <div className="w-[50%]">
           <MyVideoComponent
             videoSrc={portfolioVideos.ArtistHarmonyHubVideo}
@@ -37,7 +37,7 @@ const PortfolioSection = ({ portfolioVideos }) => {
           </p>
         </div>
       </div>
-      <div className="flex p-20">
+      <div id="oliveGarden" className="flex p-20">
         <div className="w-[50%]">
           <a
             href="https://github.com/JustJoshin12/Olive-Garden-Alcohol-Policy-Agreement/blob/main/README.md"
@@ -72,7 +72,7 @@ const PortfolioSection = ({ portfolioVideos }) => {
           />
         </div>
       </div>
-      <div className="flex p-20">
+      <div id="foodDelivery" className="flex p-20">
         <div className="w-[50%]">
           <MyVideoComponent
             videoSrc={portfolioVideos.FoodDeliveryApp}
@@ -103,7 +103,7 @@ const PortfolioSection = ({ portfolioVideos }) => {
           </p>
         </div>
       </div>
-      <div className="flex p-20">
+      <div id="sportsWear" className="flex p-20">
         <div className="w-[50%]">
           <a href="https://justjoshin12.github.io/sportwear_webpage" className="hover:text-slate-500 transition-colors duration-200">
             <h3 className="text-4xl pb-10 text-center">

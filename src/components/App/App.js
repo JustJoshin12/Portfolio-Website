@@ -17,56 +17,14 @@ const portfolioVideos = {
   ClothingSportsWear: ClothingSportsWear,
 };
 
-function useFadeIn(direction = "left") {
-  const { ref, inView } = useInView({
-    triggerOnce: true,
-    threshold: 0.2,
-  });
-
-  // Determine the direction of the animation
-  const animationClass =
-    direction === "left" ? "translate-x-[-100px]" : "translate-x-[100px]";
-
-  // Combine opacity and translate classes
-  const visibilityClass = inView
-    ? `opacity-100 translate-x-0`
-    : `opacity-0 ${animationClass}`;
-
-  return [ref, visibilityClass];
-}
-
 function App() {
-  const [headerRef, headerAnimation] = useFadeIn('left');
-  const [aboutMeRef, aboutMeAnimation] = useFadeIn('right');
-  const [skillSectionRef, skillSectionAnimation] = useFadeIn('left');
-  const [portfolioSectionRef, portfolioSectionAnimation] = useFadeIn('right');
   return (
-    <div className="bg-neutral-200 overflow-hidden">
+    <div className="bg-neutral-200">
       <Navbar />
-      <div
-        ref={headerRef}
-        className={`transition-all duration-1000 ease-out ${headerAnimation}`}
-      >
-        <Header />
-      </div>
-      <div
-        ref={aboutMeRef}
-        className={`transition-all duration-1000 ease-out ${aboutMeAnimation}`}
-      >
-        <AboutMe />
-      </div>
-      <div
-        ref={skillSectionRef}
-        className={`transition-all duration-1000 ease-out ${skillSectionAnimation}`}
-      >
-        <SkillSection />
-      </div>
-      <div
-        ref={portfolioSectionRef}
-        className={`transition-all duration-1000 ease-out ${portfolioSectionAnimation}`}
-      >
-        <PortfolioSection portfolioVideos={portfolioVideos} />
-      </div>
+      <Header />
+      <AboutMe />
+      <SkillSection />
+      <PortfolioSection portfolioVideos={portfolioVideos} />
       <Footer />
     </div>
   );
