@@ -1,4 +1,5 @@
 {
+  "homepage": "https://justjoshin12.github.io/Portfolio-Website",
   "name": "portfolio-website",
   "version": "0.1.0",
   "private": true,
@@ -23,7 +24,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "npm run build && gh-pages -d build"
+    
   },
   "eslintConfig": {
     "extends": [
@@ -45,6 +48,12 @@
   },
   "devDependencies": {
     "daisyui": "^4.7.2",
+    "gh-pages": "^6.1.1",
     "tailwindcss": "^3.4.1"
-  }
+  },
+  "description": "Welcome to my personal portfolio website! I'm Joshua Smith, a passionate and versatile software engineer with a rich background in web development. Through my journey, I've honed my skills across a spectrum of technologies and methodologies, making me well-equipped to bring creative and efficient solutions to the table.",
+  "main": "tailwind.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
