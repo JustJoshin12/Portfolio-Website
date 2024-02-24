@@ -31,7 +31,7 @@ function HeroImage() {
       }
         `}
       </style>
-      <div className="relative w-[500px] h-[500px] overflow-hidden rounded-full blob-effect">
+      <div className="relative lg:w-[430px] xl:w-[500px] lg:h-[430px] xl:h-[500px] overflow-hidden rounded-full blob-effect ">
         <img src={heroImg} alt="Hero" className="object-cover w-full h-full" />
         <div className=""></div>
       </div>

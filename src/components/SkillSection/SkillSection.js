@@ -1,5 +1,6 @@
 import SKillIcon from "../UI/SkillIcon/SkillIcon";
-import Arrow from "../../images/arrowLeft.png";
+import ArrowLeft from "../../images/arrowLeft.svg";
+import ArrowRight from "../../images/arrowRight.svg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -26,7 +27,7 @@ const SkillSection = () => {
                 }
             `}
       </style>
-      <section id="skills" className="py-24 mt-[-4rem]">
+      <section id="skills" className="py-24 mt-[-6rem]">
         <div className="flex items-center pt-14 pl-24">
           <h2 className="font-[Playfair] text-4xl inline-block align-middle">
             Skills : MERN - STACK
@@ -60,8 +61,7 @@ const SkillSection = () => {
           modules={[FreeMode, Pagination]}
           className="w-[80%]"
         >
-          {skillObject.map((skill,index) => {
-            
+          {skillObject.map((skill, index) => {
             return (
               <SwiperSlide key={index} className="w-[90%] py-20">
                 <SKillIcon skill={skill} />
@@ -69,13 +69,17 @@ const SkillSection = () => {
             );
           })}
         </Swiper>
-        <div className="flex items-center justify-center gap-16 py-8"> 
-        <img
-            src={Arrow}
-            className="w-[100px]  arrow-animate"
+        <div className="flex justify-center gap-[250px]  pb-12">
+          <img
+            src={ArrowLeft}
+            className="w-[100px] h-[100px] transform rotate-180 arrow-animate"
             alt="Animated arrow"
           />
-          <p className="text-5xl font-[Playfair]">Swipe</p>
+          <img
+            src={ArrowRight}
+            className="w-[100px] h-[100px] arrow-animate transform rotate-180"
+            alt="Animated arrow"
+          />
         </div>
       </section>
     </>

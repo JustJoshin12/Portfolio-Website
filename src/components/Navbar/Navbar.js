@@ -18,12 +18,12 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`text-black font-[Playfair] flex items-center justify-between py-7 px-24 border-b border-gray-300 ${
+      className={`text-black font-[Playfair] flex items-center justify-between lg:py-6 xl:py-7 lg:px-12 xl:px-24 border-b border-gray-300 ${
         isSticky ? "fixed top-0 bg-neutral-200 shadow-lg z-[100] w-full" : ""
       }`}
     >
       <h1 className="text-4xl">Joshua.dev</h1>
-      <ul className="flex gap-24 text-gray-500 text-xl">
+      <ul className="flex lg:gap-10 xl:gap-24 text-gray-500 text-xl">
         <li className="transition-colors duration-200 hover:text-black hover:cursor-pointer">
           <a href="#home">Home</a>
         </li>

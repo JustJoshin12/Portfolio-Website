@@ -1,4 +1,3 @@
-
 function sendEmail() {
   window.location.href = "mailto:joshdevsmith.97@gmail.com";
 }
@@ -9,9 +8,9 @@ const HireMeButton = () => {
       className="btn btn-neutral bg-slate-600 border-none"
       onClick={sendEmail}
     >
-      Hire Me
+      Email me
     </button>
   );
-}
+};
 
 export default HireMeButton;

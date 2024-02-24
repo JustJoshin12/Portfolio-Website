@@ -5,7 +5,7 @@ function scrollToContact() {
   const ContactButton = () => {
     return (
       <button
-        className="text-xl p-6 transition-colors duration-500 font-bold font-playfair hover:text-white hover:bg-black rounded"
+        className="lg:text-lg xl:text-xl p-6 transition-colors duration-500 font-bold font-playfair hover:text-white hover:bg-black rounded"
         onClick={scrollToContact}
       >
         Contact Me

@@ -1,6 +1,6 @@
-import PCImg from "../../images/pc-build.jpg";
+import JavascriptAssessmentImg from "../../images/javascriptAssessmentImg.png";
 import CodeImg from "../../images/codeImg.PNG";
-import Certificate from "../../images/certificate.png"
+import Certificate from "../../images/certificate.png";
 
 const AboutMe = () => {
   return (
@@ -9,25 +9,29 @@ const AboutMe = () => {
       className="bg-black text-white flex flex-row px-12 py-14 mt-[-6rem]"
     >
       <div className="flex py-28">
-        <div className="w-1/2 flex flex-col items-center justify-center relative mt-24">
+        <div className="w-1/2 flex flex-col items-center justify-center relative lg:gap-10">
           <img
-            className="absolute top-0 left-[380px] w-[400px] h-auto z-10 border-2 rounded-badge"
+            className="xl:absolute top-0 left-[380px] w-[400px] h-[300px] z-10 border-2 rounded-badge"
             src={Certificate}
             alt="Picture of certificate"
           />
           <img
-            className="absolute top-44 left-20 w-[400px] h-[320px] pb-4 border-2 rounded-badge"
+            className="xl:absolute top-44 left-20 w-[400px] h-[300px] border-2 rounded-badge"
             src={CodeImg}
             alt="Picture of code"
           />
-          <img/>
+          <img
+            className="xl:absolute bottom-0 right-20 w-[400px] h-[300px] border-2 rounded-badge"
+            src={JavascriptAssessmentImg}
+            alt="JavaScript Certificate"
+          />
         </div>
-        <div className="w-1/2 flex flex-col items-start justify-center p-10">
+        <div className="w-1/2 flex flex-col items-start justify-center lg:p-3 xl:p-10">
           <h2 className="text-6xl font-[Playfair] text-white flex py-10 flex-wrap">
             About Me
           </h2>
           <h3 className="text-2xl pb-4 font-[Playfair]">Background</h3>
-          <p className="text-xl font-[Playfair]">
+          <p className="lg:text-lg xl:text-xl font-[Playfair] tracking-wide">
             Throughout my journey, I've acquired a diverse skill set in software
             engineering, encompassing various technologies and methodologies.
             I'm proficient in JavaScript, utilizing frameworks such as React.js
@@ -42,8 +46,10 @@ const AboutMe = () => {
           </p>
           <div className="py-7 font-[Playfair]">
             <h3 className="text-2xl ">Education</h3>
-            <p className="text-xl py-3 pl-3">TripleTen, Web Developer Professional Training</p>
-            <ul className="px-3 list-disc">
+            <p className="text-xl py-3 pl-3">
+              TripleTen, Web Developer Professional Training
+            </p>
+            <ul className="px-3 list-disc tracking-wide">
               <li>
                 Completed 690+ hours of coding in JavaScript, React.js, Node.js,
                 HTML5, CSS3, BEM
