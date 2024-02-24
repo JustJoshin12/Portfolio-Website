@@ -33,3 +33,7 @@ While my portfolio is a personal project, I'm open to feedback and suggestions. 
 ## License
 
 This project is open for sharing and educational purposes. If you're inspired by my work or wish to use parts of it as a reference, I'd appreciate attribution!
+
+## Links
+
+-[Portfolio](https://justjoshin12.github.io/Portfolio-Website/)
