@@ -8,6 +8,7 @@ import "swiper/css/free-mode";
 
 import { FreeMode, Pagination } from "swiper/modules";
 import skillObject from "../../ultis/skillInfo";
+import SkillList from "../SkillMastery/SkillMastery";
 
 const SkillSection = () => {
   return (
@@ -28,59 +29,61 @@ const SkillSection = () => {
             `}
       </style>
       <section id="skills" className="py-24 mt-[-6rem]">
-        <div className="flex items-center pt-14 pl-24">
-          <h2 className="font-[Playfair] text-4xl inline-block align-middle">
-            Skills : MERN - STACK
+        <div className="text-center pt-14">
+          <h2 className="font-[Playfair] text-8xl py-8 tracking-widest">
+            Skill Set
           </h2>
+          <p className="text-2xl font-[Playfair]">MERN-STACK</p>
         </div>
-        <Swiper
-          breakpoints={{
-            340: {
-              slidesPerView: 1,
-              spaceBetween: 0,
-            },
-            425: {
-              slidesPerView: 2,
-              spaceBetween: 10,
-            },
-            640: {
-              slidesPerView: 3,
-              spaceBetween: 20,
-            },
-
-            800: {
-              slidesPerView: 4,
-              spaceBetween: 10,
-            },
-            1200: {
-              slidesPerView: 5,
-              spaceBetween: 2,
-            },
-          }}
-          freeMode={true}
-          modules={[FreeMode, Pagination]}
-          className="w-[80%]"
-        >
-          {skillObject.map((skill, index) => {
-            return (
-              <SwiperSlide key={index} className="w-[90%] py-20">
-                <SKillIcon skill={skill} />
-              </SwiperSlide>
-            );
-          })}
-        </Swiper>
-        <div className="flex justify-center gap-[250px]  pb-12">
+        <div className="flex items-center py-16">
           <img
             src={ArrowLeft}
-            className="w-[100px] h-[100px] transform rotate-180 arrow-animate"
+            className="w-[70px] h-[70px] transform rotate-180 arrow-animate mx-auto"
             alt="Animated arrow"
           />
+          <Swiper
+            breakpoints={{
+              340: {
+                slidesPerView: 1,
+                spaceBetween: 0,
+              },
+              425: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+              },
+              640: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+              },
+
+              800: {
+                slidesPerView: 4,
+                spaceBetween: 10,
+              },
+              1200: {
+                slidesPerView: 5,
+                spaceBetween: 0,
+              },
+            }}
+            freeMode={true}
+            modules={[FreeMode, Pagination]}
+            className="w-[80%] hover:bg-slate-500 duration-200 rounded-badge"
+          >
+            {skillObject.map((skill, index) => {
+              return (
+                <SwiperSlide key={index} className="w-[90%] py-16">
+                  <SKillIcon skill={skill} />
+                </SwiperSlide>
+              );
+            })}
+          </Swiper>
           <img
             src={ArrowRight}
-            className="w-[100px] h-[100px] arrow-animate transform rotate-180"
+            className="w-[70px] h-[70px] arrow-animate transform rotate-180 mx-auto"
             alt="Animated arrow"
           />
         </div>
+        <SkillList/>
       </section>
     </>
   );

@@ -67,7 +67,7 @@ const PortfolioSection = ({ portfolioVideos }) => {
               Live
             </a>
           </div>
-          <p className="px-16 text-xl text-center tracking-wide">
+          <p className="px-16 text-xl text-center tracking-wide hover:scale-110 hover:text-purple-400 duration-200">
             Artist HarmonyHub is an engaging online platform that invites music
             enthusiasts to "Discover, Connect, Groove." This dynamic website
             serves as a hub where users can explore and connect with their
@@ -125,7 +125,7 @@ const PortfolioSection = ({ portfolioVideos }) => {
               />
             </div>
           </div>
-          <p className="px-16 text-xl text-center tracking-wide">
+          <p className="px-16 text-xl text-center tracking-wide hover:scale-110 hover:text-green-400 duration-200">
             This collaborative endeavor exemplifies the seamless integration of
             the React framework and Tailwind CSS to craft a sophisticated and
             adaptable web application. Its central objective revolves around
@@ -196,7 +196,7 @@ const PortfolioSection = ({ portfolioVideos }) => {
               />
             </div>
           </div>
-          <p className="px-16 text-xl text-center tracking-wide">
+          <p className="px-16 text-xl text-center tracking-wide hover:scale-110 hover:text-amber-400 duration-200">
             "Josh's Panorama Plates" is a sophisticated food ordering app,
             leveraging the power of React and Node.js to offer restaurants a
             seamless full-stack solution. With our user-friendly interface,
@@ -257,7 +257,7 @@ const PortfolioSection = ({ portfolioVideos }) => {
               Live
             </a>
           </div>
-          <p className="px-16 text-xl text-center">
+          <p className="px-16 text-xl text-center tracking-wider hover:scale-110 hover:text-slate-300 duration-200">
             At Sports Wear, we are passionate about bringing the latest and most
             sought-after name-brand sports apparel directly to you. Our mission
             is to become your go-to destination for all your athletic clothing

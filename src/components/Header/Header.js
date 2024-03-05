@@ -1,7 +1,7 @@
 import HeroImage from "../UI/HeroImage/HeroImage";
 import TypingEffect from "../UI/TypingEffect/TypingEffect";
 import PortfolioButton from "../UI/PortfolioButton/PortfolioButton";
-import HireMeButton from "../UI/HireMeButton/HireMeButton";
+import EmailMeButton from "../UI/EmailMeButton/EmailMeButton";
 
 
 const Header = () => {
@@ -22,7 +22,7 @@ const Header = () => {
             from Chicago
           </p>
           <div className="flex lg:gap-[140px] xl:gap-[200px] pt-2">
-            <HireMeButton/>
+            <EmailMeButton/>
             <PortfolioButton/>
           </div>
         </div>

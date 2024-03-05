@@ -1,37 +1,21 @@
-import JavascriptAssessmentImg from "../../images/javascriptAssessmentImg.png";
-import CodeImg from "../../images/codeImg.PNG";
-import Certificate from "../../images/certificate.png";
+import FadeThroughColorSlideshow from "../UI/FadeSlideShow/FadeSlideShow";
 
 const AboutMe = () => {
   return (
     <section
       id="about-me"
-      className="bg-black text-white flex flex-row px-12 py-14 mt-[-6rem]"
+      className="bg-black text-white  px-12 py-14 mt-[-6rem]"
     >
-      <div className="flex py-28">
+      <h2 className="text-8xl font-[Playfair] text-white py-14 mt-16 flex-wrap text-center">
+        About Me
+      </h2>
+      <div className="flex flex-col items-center xl:flex-row ">
         <div className="w-1/2 flex flex-col items-center justify-center relative lg:gap-10">
-          <img
-            className="xl:absolute top-0 left-[380px] w-[400px] h-[300px] z-10 border-2 rounded-badge"
-            src={Certificate}
-            alt="Picture of certificate"
-          />
-          <img
-            className="xl:absolute top-44 left-20 w-[400px] h-[300px] border-2 rounded-badge"
-            src={CodeImg}
-            alt="Picture of code"
-          />
-          <img
-            className="xl:absolute bottom-0 right-20 w-[400px] h-[300px] border-2 rounded-badge"
-            src={JavascriptAssessmentImg}
-            alt="JavaScript Certificate"
-          />
+          <FadeThroughColorSlideshow />
         </div>
-        <div className="w-1/2 flex flex-col items-start justify-center lg:p-3 xl:p-10">
-          <h2 className="text-6xl font-[Playfair] text-white flex py-10 flex-wrap">
-            About Me
-          </h2>
-          <h3 className="text-2xl pb-4 font-[Playfair]">Background</h3>
-          <p className="lg:text-lg xl:text-xl font-[Playfair] tracking-wide">
+        <div className="w-1/2 flex flex-col items-start justify-center  lg:p-7 xl:p-10 hover:bg-white hover:text-black rounded-2xl  duration-300">
+          <h3 className="text-2xl pb-4 font-[Playfair] ">Background</h3>
+          <p className="lg:text-lg xl:text-xl font-[Playfair] tracking-wide hover:scale-105 duration-200">
             Throughout my journey, I've acquired a diverse skill set in software
             engineering, encompassing various technologies and methodologies.
             I'm proficient in JavaScript, utilizing frameworks such as React.js
@@ -49,7 +33,7 @@ const AboutMe = () => {
             <p className="text-xl py-3 pl-3">
               TripleTen, Web Developer Professional Training
             </p>
-            <ul className="px-3 list-disc tracking-wide">
+            <ul className="px-3 list-disc tracking-wide hover:scale-105 duration-200">
               <li>
                 Completed 690+ hours of coding in JavaScript, React.js, Node.js,
                 HTML5, CSS3, BEM
@@ -63,6 +47,11 @@ const AboutMe = () => {
                 Developed and deployed dynamic MERN stack web application from
                 scratch
               </li>
+              <li>
+                Learned how to efficiently organize tasks and innovate solutions
+                to complex challenges
+              </li>
+              <li>Built RESTful APIs using Express.js and MongoDB</li>
             </ul>
           </div>
         </div>
